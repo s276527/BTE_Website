@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
     height: 100%;
     margin: 0;
     font-size: 16px;
@@ -8,9 +8,9 @@
     color: #666;
 }
 
-.pimg1, .pimg2 {
+.pimg1, .pimg2, .pimg3, .pimg4 {
     position: relative;
-    opacity: 0.70;
+    opacity: 0.80;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,9 +28,16 @@
 
 .pimg2 {
     background-image: url('Img/Burger.jpg');
-    height: 100%;
+    min-height: 100%;
 }
-
+.pimg3 {
+    background-image: url('Img/Cake.jpeg');
+    min-height: 100%;
+}
+.pimg4 {
+    background-image: url('Img/Pancakes.jpeg');
+    min-height: 100%;
+}
 .section {
     text-align: center;
     padding: 50px 80px;
@@ -61,12 +68,8 @@
     background-color: #3594c4;
     color: white;
     padding: 20px;
-
-}
-
-.ptext .border.top {
     border-radius: 10px;
-    }
+}
 
 a {
     text-decoration: none;
@@ -86,6 +89,15 @@ a {
   background: #bce0f2;
   }
 
+  .tablinks{
+    color: inherit;
+
+  }
+
+  .tablinks:active{
+     background: #ccc;
+  }
+
   .tab button{
     background-color: inherit;
     float: left;
@@ -98,7 +110,7 @@ a {
   }
         /* enable Parallax Scroll for pc*/
         @media(min-width: 568px) {
-            .pimg1, .pimg2 {
+            .pimg1, .pimg2, .pimg3, .pimg4 {
                 background-attachment: fixed;
             }
         }

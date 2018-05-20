@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Coolspot Cafe</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <div class="pimg1">
     <div class="ptext">
-        <span class="border top">
+        <span class="border">
             Cool Spot Cafe
         </span>
     </div>
 </div>
-
+<section class="section section-dark">
+<h2>About Us</h2>
+<!-- Insert about us contet here-->
+</section>
+<div class="pimg3">
+  <div class="ptext">
+    <span class="border">
+      Menus
+    </span>
+  </div>
+</div>
 <section class="section section-light">
     <div class="tab">
-      <button class="tablinks" onclick="openMenu (event, 'Main')">Mains</button>
+      <button class="tablinks active" onclick="openMenu (event, 'Main')">Mains</button>
       <button class="tablinks" onclick="openMenu (event, 'Breakfast')">Breakfast</button>
       <button class="tablinks" onclick="openMenu (event, 'Lunch')">Lunch</button>
-      <button class="tablinks" onclick="openMenu (event, 'Burgers')">Burgers & Wraps</button>
+      <button class="tablinks" onclick="openMenu (event, 'Burgers')">Burgers</button>
       <button class="tablinks" onclick="openMenu (event, 'Salads')">Salads</button>
       <button class="tablinks" onclick="openMenu (event, 'Dessert')">Dessert</button>
-      </div>
-      <div id="Main" class="tabcontent">
+    </div>
+    <div id="Main" class="tabcontent" style ="display: block;">
       <h2>Main Menu</h2>
     <h3>
         <span>Riverina Black Angus Scotch Fillet Steak</span>
@@ -97,7 +108,7 @@
         Please ask Staff for catch of the day!
     </p>
     </div>
-    <div id="Breakfast" class="tabcontent">
+    <div id="Breakfast" class="tabcontent" style ="display: none;">
       <h2>Breakfast</h2>
     <h3>
         <span>Coolspot Big Breakfast</span>
@@ -165,7 +176,203 @@
       cream!
     </p>
   </div>
+    <div id="Lunch" class="tabcontent" style="display: none;">
+      <h2>Lunch</h2>
+    <h3>
+        <span>Salt & Pepper Squid</span>
+        <span>$15.00</span>
+    </h3>
+    <p>
+      served with a sweet chilli dipping sauce & homemade
+      herb aioli
+    </p>
+    <h3>
+        <span>Beef Nachos</span>
+        <span>$14.00</span>
+    </h3>
+    <p>
+      with sour cream & guacomole
+    </p>
+    <h3>
+        <span>Crispy grilled Chorizo</span>
+        <span>$14.00</span>
+    </h3>
+    <p>
+      grilled spicy chorizo served with a tomato chutney &
+      olives
+    </p>
+    <h3>
+        <span>Basil & Tomato Bruschetta</span>
+        <span>$12.00</span>
+    </h3>
+    <p>
+      basil & tomatoes on toasted vienna with balsamic
+      glaze and fresh baby spinach
+    </p>
+    <h3>
+        <span>Bacon & Egg Sandwich</span>
+        <span>$9.00</span>
+    </h3>
+    <p>
+      Served with white or multigrain bread
+    </p>
+    <h3>
+        <span>Bacon, Lettuce & Tomato</span>
+        <span>$9.00</span>
+    </h3>
+    <p>
+      Served with white or multigrain bread
+    </p>
+  </div>
+    <div id="Burgers" class="tabcontent" style="display: none;">
+      <h2>Burgers</h2>
+      <h3>
+        <span>Coolspot Hamburger with Bacon & Egg</span>
+        <span>$19.50</span>
+      </h3>
+      <p>
+        Homemade hamburger patty served with beerenberg
+        relish, bacon, fried egg, cheddar cheese, lettuce &
+        tomato
+      </p>
+      <h3>
+        <span>Coolspot Scotch Fillet Steak Burger</span>
+        <span>$19.50</span>
+      </h3>
+    <p>
+      Black Angus Scotch fillet steak with bacon, egg,
+      cheddar cheese, lettuce & tomato
+    </p>
+    <h3>
+        <span>Gourmet Chicken Burger</span>
+        <span>$19.50</span>
+    </h3>
+    <p>
+      Chicken Breast with bacon, guacamole, cheddar
+      cheese, lettuce, tomato & a side of homemade aioli
+    </p>
+    <h3>
+        <span>Chicken Schnitzel Burger</span>
+        <span>$18.00</span>
+    </h3>
+    <p>
+      Chicken breast schnitzel with bacon, cheddar cheese,
+      lettuce, tomato and homemade aioli
+    </p>
+    <h3>
+        <span>Cheese Burger</span>
+        <span>$16.00</span>
+    </h3>
+    <p>
+      Homemade hamburger patty served with double
+      cheddar cheese, lettuce & tomato
+    </p>
+  </div>
+  <div id="Salads" class="tabcontent" style="display: none;">
+    <h2>Salads</h2>
+    <h3>
+      <span>Salt & Pepper Squid Salad</span>
+      <span>$18.00</span>
+    </h3>
+    <p>
+      Local Squid served with mixed lettuce leaves, crunchy
+      shredded vegetabes, herb aioli and lemon wedges
+    </p>
+    <h3>
+      <span>Thai Chicken Salad</span>
+      <span>$18.00</span>
+    </h3>
+  <p>
+    Marinated chicken breast with spicy sweet chilli &
+    lime dressing, fresh herbs, mixed greens, roasted
+    cashews & julienne vegetables
+  </p>
+  <h3>
+      <span>Warm Lamb Salad</span>
+      <span>$18.00</span>
+  </h3>
+  <p>
+    Greek style lamb served with homemade garlic
+    yoghurt, mixed lettuce leaves, onions, tomatoes,
+    olives & toasted pita bread
+  </p>
+  <h3>
+      <span>Premium Tasmanian Smoked Salmon</span>
+      <span>$18.00</span>
+  </h3>
+  <p>
+    Gourmet salad mix, toasted sesame seeds & our own
+    citrus dressing
+  </p>
+  <h3>
+      <span>Green Energy Salad topped with Bulgarian Feta</span>
+      <span>$18.00</span>
+  </h3>
+  <p>
+    Sliced avocado, shredded cabbage, cherry tomatoes, a
+    julienne mix of carrot, fresh beetroot, capsicums,
+    spring onions and topped with crumbled Bulgarian
+    Feta. Served with a dressing of Olive oil and a wedge
+    of lemon
+  </p>
+  <h3>
+    <span>Warm Chicken Salad</span>
+    <span>$18.00</span>
+  </h3>
+  <p>
+    Warm chicken breast, mixed greens, fresh herbs,
+    roasted cashews, julienne vegetables dressed with
+    extra virgin olive oil
+  </p>
+  </div>
 
+  <div id="Dessert" class="tabcontent" style="display: none;">
+    <h2>Dessets</h2>
+    <h3>
+      <span>Nut Sundae</span>
+      <span>$12.00</span>
+    </h3>
+    <p>
+      1 scoop each of chocolate, strawberry and vanilla icecream layered with nuts and topping and finished
+      with lashings of cream & wafers
+    </p>
+    <h3>
+      <span>Rocky Road</span>
+      <span>$12.00</span>
+    </h3>
+  <p>
+    1 scoop each of chocolate, strawberry and vanilla icecream topped with marshmallows, nuts, topping and
+    cream.
+  </p>
+  <h3>
+      <span>Ole fashioned Banana Split</span>
+      <span>$12.00</span>
+  </h3>
+  <p>
+    3 scoops of vanilla icecream with ripe banana, chocolate topping, cream and sprinkled with nuts
+  </p>
+  <h3>
+      <span>Homemade crepes</span>
+      <span>$12.00</span>
+  </h3>
+  <p>
+    Served with banana and butterscotch sauce and served with vanilla icecream and cream
+  </p>
+  <h3>
+      <span>Delicious Apple Pie</span>
+      <span>$9.50</span>
+  </h3>
+  <p>
+    Served warm with vanilla icecream & cream
+  </p>
+  <h3>
+    <span>Sticky Date Pudding</span>
+    <span>$9.50</span>
+  </h3>
+  <p>
+    Served warm with homemade butterscotch sauce, vanilla icecream and cream
+  </p>
+  </div>
 </section>
 
 <div class="pimg2">
@@ -176,7 +383,19 @@
     </div>
 </div>
 <section class="section section-dark">
-    <h2>Contact</h2>
+  <h2>Make a Reservation</h2>
+<!-- Insert reservation form here-->
+</section>
+<div class="pimg4">
+    <div class="ptext">
+        <span class="border">
+            Contact
+        </span>
+    </div>
+</div>
+<section class="section section-light">
+
+    <h2>Contact Us</h2>
     <p>
         We are open 7 days from 7am until late, with the full menu available until 10pm.
         If you wish to book a table give us a <a href="tel: 0889818428">call</a>
