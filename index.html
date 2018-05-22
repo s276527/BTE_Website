@@ -15,7 +15,7 @@
     <a href="#menu">Menus</a>
     <a href="#reservation">Reservations</a>
     <a href="#contact">Contact</a>
-    
+
   </nav>
 </header>
 <body>
@@ -28,7 +28,9 @@
 </div>
 <section class="section section-dark">
 <h2>About Us</h2>
-<!-- Insert about us contet here-->
+<span>Welcome to the Cool Spot Café situated at Fannie Bay. Whether you're a local or a visitor
+  I am sure you will enjoy a visit to the Cool Spot for a quick cup of coffee, tea, or a quick snack to a full meal.
+  True to its name if you want to cool down after a hot day enjoy a gelato and a cold drink in the air-conditioning.</span>
 </section>
 <div class="pimg3"  id="menu">
   <div class="ptext">
@@ -395,7 +397,73 @@
 </div>
 <section class="section section-dark">
   <h2>Make a Reservation</h2>
-<!-- Insert reservation form here-->
+  <form>
+
+ <div id="container">
+
+
+                   <div class="userinput">
+                    <label> First Name  </label>
+                    <input type="text" name="firstName" value="" />
+                   </div>
+
+                   <div class="userinput">
+                    <label> Last Name  </label>
+                    <input type="text" name="lastName" value="" />
+                   </div>
+
+                   <div class="userinput">
+                    <label> Email </label>
+                    <input type="text" name="email" value="" />
+                   </div>
+                   <div class="userinput">
+                   <label>Phone Number</label>
+                   <input type="text" name="number" value=""/>
+
+                   </div>
+
+                   <div class="userinput">
+                    <label> Gender </label>
+                    <input type="radio" name="gender" value="m"/> <label for="radio">Male</label>
+                    <input type="radio" name="gender" value="f" /><label for="radio"> Female</label>
+                   </div>
+
+                  <!--  <div class="userinput">
+                    <label> Choose Subjects </label>
+                    <input type="checkbox" name="subject" value="OOP" /><label for="checkbox"> OOP</label>
+                    <input type="checkbox" name="subject" value="DB" /><label for="checkbox">Database</label>
+                    <input type="checkbox" name="subject" value="Web"/><label for="checkbox"> security</label>
+                    <input type="checkbox" name="subject" value="Android"/> <label for="checkbox">Android Dev</label>
+                   </div> -->
+
+                   <div class="userinput">
+                     <label>Arival Time</label>
+                  <input type="text" name="time" value=""/>
+
+                   </div>
+
+                   <div class="userinput">
+                    <label>No. of people</label>
+                  <input type="text" name="people" value=""/>
+                   </div>
+
+                   <div class="userinput">
+                    <label>City </label>
+                    <select name="city">
+                     <option value="1">Darwin</option>
+                     <option value="2">Sydney</option>
+                     <option value="3">Melbourne </option>
+                    </select>
+                   </div>
+
+                   <div style="text-align:center">
+                    <input type="reset" class="sampleBtn"/>
+                    <input type="submit" class="sampleBtn"/>
+                   </div>
+
+
+  </div>
+  </form>
 </section>
 <div class="pimg4" id="contact">
     <div class="ptext">

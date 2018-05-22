@@ -143,6 +143,46 @@ a {
     font-size: 15px;
     transition: 0.3s;
   }
+  label{
+ width: 10%;
+       display: inline-block;
+
+      }
+
+#container{
+       padding: 20px;
+       width: 60%;
+       margin: 0 auto;
+       margin-top: 1%;
+       margin-bottom: 1%;
+
+}
+.userinput{
+
+    padding-top: 3px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+
+   }
+
+     label{
+
+    color: white;
+    font-size: 14px;
+   }
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
         /* enable Parallax Scroll for pc*/
         @media(min-width: 568px) {
             .pimg1, .pimg2, .pimg3, .pimg4 {
